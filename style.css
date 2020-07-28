@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    color:black;
+    background:white;
+}
+
+/*section title*/
+
+.section-title-special{
+    background:#D2BC74;
+    color:black;
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0,100% 0,90% 100%,0 100%);
+}
+
+/*navbar*/
+
+.navbar{
+    background:black;
+}
+
+.navbar-icon{
+    font-size: 2rem;
+    color:#D2BC74;
+}
+
+.navbar-toggler{
+    outline:none !important;
+    border: none !important;
+}
+
+.nav-link{
+    color: #D2BC74;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover{
+    color:white;
+}
+
+.nav-icon{
+    font-size: 1.5rem;
+    color:#D2BC74;
+    text-decoration: none !important;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.nav-icon:hover{
+    color:#fbfdfb;
+}
+
+
+/*Header*/
+
+
+.header{
+    clip-path:polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+    color: white;
+    overflow: hidden;
+}
+
+.max-height{
+    min-height:calc(100vh - 156px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation-name:zoom;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1) ;
+    }
+    50%{
+        transform: scale(1.2) translateX(-5%);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+.title-heading{
+    background:rgba(0,0,0,0.5);
+    border-left:0.3rem solid #D2BC74;
+}
+
+
+.title{
+    font-weight:700;
+    font-size: 1.9rem;
+}
+
+@media screen and (min-width:768px){
+    .title{
+        font-size:3rem;
+    }
+}
+
+.title-icon{
+    color:#D2BC74;
+    text-decoration: none !important;
+}
+
+.title-icon:hover{
+    color:whitesmoke;
+    opacity:0.6;
+}
+
+
+/*skills*/
+
+
+.skills-icon{
+    font-size: 3rem;
+    color: #D2BC74;
+    background: black;
+}
+
+.skills-icon:hover{
+    color: black;
+    background:#D2BC74;
+}
+
+.skills-underline{
+    width:4rem;
+    height:0.3rem;
+    background: linear-gradient(rgba(128, 41, 41, 0.1),rgba(0,0,0,1));
+    margin: 1rem auto;
+}
+
+
+/*preloader*/
+
+.preloader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    z-index: 999;
+}
+
+
+.hidePreloader{
+    display:none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
